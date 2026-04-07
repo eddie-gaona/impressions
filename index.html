@@ -448,6 +448,11 @@
     </footer>
 
     <script>
+        amplitude.init('3d6cf82851f4f39cbac0be8ded7f6536', {
+          cookieOptions: {
+            name: 'my_company'  // static name, not tied to the API key
+          }
+        });
         document.getElementById('contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
             alert('Thank you for your message! We\'ll get back to you soon.');
